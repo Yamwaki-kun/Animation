@@ -1,3 +1,4 @@
+import 'package:animation/Home.dart';
 import 'package:flutter/material.dart';
 import 'Login.dart';
 
@@ -7,6 +8,9 @@ void main() {
         theme: ThemeData(
           fontFamily: 'Soularic'
         ),
+    initialRoute: "/",
+    routes: {
+          "/Home":(context) => Home()},
     home: Login(),
         debugShowCheckedModeBanner: false,
 

@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:animation/Home.dart';
 import 'package:flutter/material.dart';
 import 'Corner.dart';
 
@@ -237,7 +238,14 @@ class _LoginState extends State<Login> {
                       padding: EdgeInsets.only(top: 40),
                       child: Stack(
                         children: [
-                          Image.asset("image/4.png"),
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> Home()));
+                            },
+                            child:
+                            Image.asset("image/4.png"),
+                          ),
+
                           Padding(
                               padding: EdgeInsets.only(top: 20, bottom: 60),
                               child: Center(
